@@ -1,0 +1,23 @@
+---
+stacks:
+  - name: kafka
+    description: Kafka stack
+    units:
+      - name: base
+        version: 1.0.0
+        dockerfile: ./_base/Dockerfile
+        startable: false
+
+      - name: zookeeper
+        version: 1.0.0
+        dockerfile: ./zookeeper/Dockerfile
+        ports:
+          - 2181:2181
+
+      - name: kafka
+        version: 1.0.0
+        dockerfile: ./kafka/Dockerfile
+        needed_unit_names:
+          - zookeeper
+        ports:
+          - 9092:9092

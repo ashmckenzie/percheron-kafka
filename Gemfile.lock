@@ -1,0 +1,43 @@
+GIT
+  remote: git://github.com/ashmckenzie/percheron.git
+  revision: 07eea52af55049f016eda8acf62ad0bba5d0d64f
+  branch: 0.9.0-dev
+  specs:
+    percheron (0.9.0.pre.dev)
+      clamp (~> 1.0.0)
+      docker-api (~> 1.22.0)
+      hashie (~> 3.4.0)
+      highline (~> 1.7.1)
+      liquid (~> 3.0.0)
+      metastore (~> 0.3.0)
+      naught (~> 1.0.0)
+      ruby-graphviz (~> 1.2.0)
+      semantic (~> 1.4.0)
+      terminal-table (~> 1.5.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    clamp (1.0.0)
+    docker-api (1.22.3)
+      excon (>= 0.38.0)
+      json
+    excon (0.45.4)
+    hashie (3.4.2)
+    highline (1.7.3)
+    json (1.8.3)
+    liquid (3.0.6)
+    metastore (0.3.0)
+    naught (1.0.0)
+    ruby-graphviz (1.2.2)
+    semantic (1.4.1)
+    terminal-table (1.5.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  percheron!
+
+BUNDLED WITH
+   1.10.5
